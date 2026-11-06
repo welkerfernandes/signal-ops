@@ -1,5 +1,9 @@
 # Signal Ops
 
+[![CI](https://github.com/welkerfernandes/signal-ops/actions/workflows/ci.yml/badge.svg)](https://github.com/welkerfernandes/signal-ops/actions)
+
+![Dashboard preview](docs/dashboard.png)
+
 > Decisões de rollout apoiadas em evidência estatística
 
 Um rollout não deveria avançar apenas porque uma média pontual parece aceitável; incerteza e reprodutibilidade fazem parte da decisão.
@@ -74,3 +78,5 @@ Ingerir métricas reais via OpenTelemetry/Prometheus; testar cobertura empírica
 ## Verificação em navegador
 
 O job `browser` da CI executa fluxos em Chromium, verifica a versão de 390 px e publica capturas como artifact `dashboard-screenshots`. Execute `npm install` em `ui/`, `npx playwright install chromium` e `node ui/smoke.cjs` na raiz com a API em localhost:8000 para repetir.
+
+Consulte o [registro de validação](docs/validation.md) e a [captura mobile](docs/mobile.png).
